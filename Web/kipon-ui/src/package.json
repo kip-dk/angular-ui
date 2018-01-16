@@ -1,0 +1,28 @@
+{
+  "name": "kipon-ui",
+  "version": "0.1.6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kip-dk/angular-ui"
+  },
+  "author": {
+    "name": "Kjeld Poulsen",
+    "email": "kip@kipon.dk"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kip-dk/angular-ui/issues"
+  },
+  "main": "kipon-ui.umd.js",
+  "module": "kipon-ui.js",
+  "jsnext:main": "kipon-ui.js",
+  "typings": "kipon-ui.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
