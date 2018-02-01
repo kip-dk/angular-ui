@@ -69,12 +69,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="kipon-ui\package.json" />
-    <Content Include="kipon-ui\playground\tsconfig.json" />
     <Content Include="kipon-ui\README.MD" />
+    <Content Include="kipon-ui\src\koButtonGroup.component.css" />
+    <Content Include="kipon-ui\src\koButtonGroup.component.html" />
     <Content Include="kipon-ui\src\package.json" />
     <Content Include="kipon-ui\src\tsconfig.es5.json" />
     <Content Include="kipon-ui\src\tsconfig.spec.json" />
     <None Include="packages.config" />
+    <Content Include="playground\.angular-cli.json" />
+    <Content Include="playground\.editorconfig" />
+    <Content Include="playground\package-lock.json" />
+    <Content Include="playground\package.json" />
+    <Content Include="playground\README.md" />
+    <Content Include="playground\src\app\app.component.css" />
+    <Content Include="playground\src\app\app.component.html" />
+    <Content Include="playground\src\favicon.ico" />
+    <Content Include="playground\src\index.html" />
+    <Content Include="playground\src\styles.css" />
+    <Content Include="playground\tsconfig.json" />
+    <Content Include="playground\tslint.json" />
+    <Content Include="playground\src\assets\.gitkeep" />
+    <Content Include="playground\src\tsconfig.app.json" />
+    <Content Include="playground\src\tsconfig.spec.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,9 +99,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="kipon-ui\playground\index.html" />
-    <Content Include="kipon-ui\playground\systemjs-angular-loader.js" />
-    <Content Include="kipon-ui\playground\systemjs.config.js" />
     <Content Include="kipon-ui\src\koVerticalSplit.component.css" />
     <Content Include="kipon-ui\src\koVerticalSplit.component.html" />
     <Content Include="kipon-ui\src\koHorizontalSplit.component.css" />
@@ -94,18 +107,29 @@
     <Content Include="kipon-ui\src\koMain.component.html" />
     <Content Include="kipon-ui\src\koView.component.css" />
     <Content Include="kipon-ui\src\koView.component.html" />
+    <Content Include="playground\.gitignore" />
+    <Content Include="playground\karma.conf.js" />
+    <Content Include="playground\protractor.conf.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="kipon-ui\playground\index.ts" />
     <TypeScriptCompile Include="kipon-ui\src\index.ts" />
+    <TypeScriptCompile Include="kipon-ui\src\koButtonGroup.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koHorizontalSplit.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koMain.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koVerticalSplit.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koView.component.ts" />
+    <TypeScriptCompile Include="playground\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="playground\src\app\app.component.ts" />
+    <TypeScriptCompile Include="playground\src\app\app.module.ts" />
+    <TypeScriptCompile Include="playground\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="playground\src\environments\environment.ts" />
+    <TypeScriptCompile Include="playground\src\main.ts" />
+    <TypeScriptCompile Include="playground\src\polyfills.ts" />
+    <TypeScriptCompile Include="playground\src\test.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
