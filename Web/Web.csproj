@@ -72,6 +72,10 @@
     <Content Include="kipon-ui\README.MD" />
     <Content Include="kipon-ui\src\koButtonGroup.component.css" />
     <Content Include="kipon-ui\src\koButtonGroup.component.html" />
+    <Content Include="kipon-ui\src\koHorizontalScroll.component.css" />
+    <Content Include="kipon-ui\src\koHorizontalScroll.component.html" />
+    <Content Include="kipon-ui\src\koVerticalScroll.component.css" />
+    <Content Include="kipon-ui\src\koVerticalScroll.component.html" />
     <Content Include="kipon-ui\src\package.json" />
     <Content Include="kipon-ui\src\tsconfig.es5.json" />
     <Content Include="kipon-ui\src\tsconfig.spec.json" />
@@ -118,8 +122,10 @@
   <ItemGroup>
     <TypeScriptCompile Include="kipon-ui\src\index.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koButtonGroup.component.ts" />
+    <TypeScriptCompile Include="kipon-ui\src\koHorizontalScroll.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koHorizontalSplit.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koMain.component.ts" />
+    <TypeScriptCompile Include="kipon-ui\src\koVerticalScroll.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koVerticalSplit.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koView.component.ts" />
     <TypeScriptCompile Include="playground\src\app\app.component.spec.ts" />
