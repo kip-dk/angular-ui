@@ -79,6 +79,7 @@
     <Content Include="kipon-ui\src\package.json" />
     <Content Include="kipon-ui\src\tsconfig.es5.json" />
     <Content Include="kipon-ui\src\tsconfig.spec.json" />
+    <Content Include="kipon-ui\tsconfig.json" />
     <None Include="packages.config" />
     <Content Include="playground\.angular-cli.json" />
     <Content Include="playground\.editorconfig" />
@@ -122,6 +123,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="kipon-ui\src\index.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koButtonGroup.component.ts" />
+    <TypeScriptCompile Include="kipon-ui\src\koDecimal.directive.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koHorizontalScroll.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koHorizontalSplit.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koMain.component.ts" />

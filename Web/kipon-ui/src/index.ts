@@ -8,6 +8,7 @@ import { KoVerticalSplitComponent } from './koVerticalSplit.component';
 import { KoVerticalScrollComponent } from './koVerticalScroll.component';
 import { KoViewComponent } from './koView.component';
 import { KoButtonGroupComponent } from './koButtonGroup.component';
+import { KoDecimalDirective } from './koDecimal.directive';
 
 export * from './koMain.component';
 export * from './koHorizontalSplit.component';
@@ -16,6 +17,7 @@ export * from './koVerticalSplit.component';
 export * from './koVerticalScroll.component';
 export * from './koView.component';
 export * from './koButtonGroup.component';
+export * from './koDecimal.directive';
 
 @NgModule({
   imports: [
@@ -28,7 +30,8 @@ export * from './koButtonGroup.component';
       KoVerticalSplitComponent,
       KoVerticalScrollComponent,
       KoViewComponent,
-      KoButtonGroupComponent
+      KoButtonGroupComponent,
+      KoDecimalDirective
   ],
   exports: [
       KoMainComponent,
@@ -37,7 +40,8 @@ export * from './koButtonGroup.component';
       KoVerticalSplitComponent,
       KoVerticalScrollComponent,
       KoViewComponent,
-      KoButtonGroupComponent
+      KoButtonGroupComponent,
+      KoDecimalDirective
   ]
 })
 export class KiponUIModule {
