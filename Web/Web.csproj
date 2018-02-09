@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="kipon-ui\src\index.ts" />
+    <TypeScriptCompile Include="kipon-ui\src\koFocus.directive.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koButtonGroup.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koDecimal.directive.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koHorizontalScroll.component.ts" />
