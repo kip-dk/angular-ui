@@ -5,9 +5,7 @@
     templateUrl: './koVerticalScroll.component.html',
     styleUrls: ['./koVerticalScroll.component.css']
 })
-
 export class KoVerticalScrollComponent {
-
     constructor() {
     }
 }

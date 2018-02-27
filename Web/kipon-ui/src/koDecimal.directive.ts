@@ -4,6 +4,11 @@
     selector: '[ko-decimal]'
 })
 export class KoDecimalDirective {
+    constructor(private el: ElementRef) {
+        if (el.nativeElement) {
+            el.nativeElement.style['text-align'] = 'right';
+        }
+    }
 
     @Input('ko-decimal') decimals: number = 2;
     _value: number;
@@ -24,10 +29,6 @@ export class KoDecimalDirective {
 
     controlDown: boolean = false;
     syncThread;
-
-
-    constructor(private el: ElementRef) {
-    }
 
     ngOnChanges(changes) {
         this.setValueString();

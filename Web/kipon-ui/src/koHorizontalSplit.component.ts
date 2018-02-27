@@ -8,6 +8,8 @@
 })
 
 export class KoHorizontalSplitComponent {
+    constructor() {
+    }
 
     @Input() height: string = '50%';
     @Input() fixed: string = 'top';
@@ -16,8 +18,6 @@ export class KoHorizontalSplitComponent {
     topStyle;
     bottomStyle;
 
-    constructor() {
-    }
 
     ngOnInit() {
         if (this.height == null) {

@@ -4,11 +4,8 @@
     selector: 'ko-view',
     templateUrl: './koView.component.html',
     styleUrls: ['./koView.component.css']
-
 })
 export class KoViewComponent {
-
     constructor() {
     }
-
 }

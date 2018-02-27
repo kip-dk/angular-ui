@@ -5,17 +5,15 @@
     templateUrl: './koVerticalSplit.component.html',
     styleUrls: ['./koVerticalSplit.component.css']
 })
-
 export class KoVerticalSplitComponent {
+    constructor() {
+    }
 
     @Input() width: string = '50%';
     @Input() fixed: string = 'left';
 
     leftStyle;
     rightStyle;
-
-    constructor() {
-    }
 
     ngOnInit() {
         if (this.width == null) {

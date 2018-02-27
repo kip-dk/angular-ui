@@ -7,9 +7,12 @@ import { KoHorizontalScrollComponent } from './koHorizontalScroll.component';
 import { KoVerticalSplitComponent } from './koVerticalSplit.component';
 import { KoVerticalScrollComponent } from './koVerticalScroll.component';
 import { KoViewComponent } from './koView.component';
+import { KoAlertComponent } from './koAlert.component';
+import { KoScrollYComponent } from './koScrollY.component';
 import { KoButtonGroupComponent } from './koButtonGroup.component';
 import { KoDecimalDirective } from './koDecimal.directive';
 import { KoFocusDirective } from './koFocus.directive';
+import { KoOverDirective } from './koOver.directive';
 
 export * from './koMain.component';
 export * from './koHorizontalSplit.component';
@@ -17,9 +20,12 @@ export * from './koHorizontalScroll.component';
 export * from './koVerticalSplit.component';
 export * from './koVerticalScroll.component';
 export * from './koView.component';
+export * from './koAlert.component';
+export * from './koScrollY.component';
 export * from './koButtonGroup.component';
 export * from './koDecimal.directive';
 export * from './koFocus.directive';
+export * from './koOver.directive';
 
 @NgModule({
   imports: [
@@ -32,9 +38,13 @@ export * from './koFocus.directive';
       KoVerticalSplitComponent,
       KoVerticalScrollComponent,
       KoViewComponent,
+      KoAlertComponent,
+      KoScrollYComponent,
+      KoScrollYComponent,
       KoButtonGroupComponent,
       KoDecimalDirective,
-      KoFocusDirective
+      KoFocusDirective,
+      KoOverDirective
   ],
   exports: [
       KoMainComponent,
@@ -43,9 +53,12 @@ export * from './koFocus.directive';
       KoVerticalSplitComponent,
       KoVerticalScrollComponent,
       KoViewComponent,
+      KoAlertComponent,
+      KoScrollYComponent,
       KoButtonGroupComponent,
       KoDecimalDirective,
-      KoFocusDirective
+      KoFocusDirective,
+      KoOverDirective
   ]
 })
 export class KiponUIModule {

@@ -2,6 +2,7 @@
 
 @Directive({ selector: '[ko-focus]' })
 export class KoFocusDirective implements OnChanges {
+    constructor(private hostElement: ElementRef, private renderer: Renderer) { }
 
     private _isFocused: boolean = false;
 
@@ -11,8 +12,6 @@ export class KoFocusDirective implements OnChanges {
     set isFocused(v: boolean) {
         this._isFocused = v;
     }
-
-    constructor(private hostElement: ElementRef, private renderer: Renderer) { }
 
     ngOnChanges(changes) {
         if (this.isFocused) {
