@@ -19,12 +19,14 @@ export class KoDecimalDirective {
 
     @Output('ko-valueChange') valueChange: EventEmitter<any> = new EventEmitter();
     set value(val) {
-        this._setValue(val);
+        this._setValue(val, true);
     }
 
-    private _setValue(val: number): void {
+    private _setValue(val: number, internal: boolean): void {
         this._value = val;
-        this.valueChange.emit(this._value);
+        if (!internal) {
+            this.valueChange.emit(this._value);
+        }
     }
 
     controlDown: boolean = false;
@@ -106,9 +108,9 @@ export class KoDecimalDirective {
             if (this.el.nativeElement != null) {
                 let v = this.el.nativeElement.value;
                 if (v == null || v == '') {
-                    this._setValue(null);
+                    this._setValue(null, false);
                 } else {
-                    this._setValue(Number(v.replace(',','.')));
+                    this._setValue(Number(v.replace(',','.')), false);
                 }
             }
         }, timeout);

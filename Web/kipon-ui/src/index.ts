@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { KoMainComponent } from './koMain.component';
+import { KoTitlePanelComponent } from './koTitlePanel.component';
 import { KoHorizontalSplitComponent } from './koHorizontalSplit.component';
 import { KoHorizontalScrollComponent } from './koHorizontalScroll.component';
 import { KoVerticalSplitComponent } from './koVerticalSplit.component';
@@ -15,6 +16,7 @@ import { KoFocusDirective } from './koFocus.directive';
 import { KoOverDirective } from './koOver.directive';
 
 export * from './koMain.component';
+export * from './koTitlePanel.component';
 export * from './koHorizontalSplit.component';
 export * from './koHorizontalScroll.component';
 export * from './koVerticalSplit.component';
@@ -33,6 +35,7 @@ export * from './koOver.directive';
   ],
   declarations: [
       KoMainComponent,
+      KoTitlePanelComponent,
       KoHorizontalSplitComponent,
       KoHorizontalScrollComponent,
       KoVerticalSplitComponent,
@@ -48,6 +51,7 @@ export * from './koOver.directive';
   ],
   exports: [
       KoMainComponent,
+      KoTitlePanelComponent,
       KoHorizontalSplitComponent,
       KoHorizontalScrollComponent,
       KoVerticalSplitComponent,

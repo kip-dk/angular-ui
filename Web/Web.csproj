@@ -78,6 +78,8 @@
     <Content Include="kipon-ui\src\koHorizontalScroll.component.html" />
     <Content Include="kipon-ui\src\koScrollY.component.css" />
     <Content Include="kipon-ui\src\koScrollY.component.html" />
+    <Content Include="kipon-ui\src\koTitlePanel.component.css" />
+    <Content Include="kipon-ui\src\koTitlePanel.component.html" />
     <Content Include="kipon-ui\src\koVerticalScroll.component.css" />
     <Content Include="kipon-ui\src\koVerticalScroll.component.html" />
     <Content Include="kipon-ui\src\package.json" />
@@ -135,6 +137,7 @@
     <TypeScriptCompile Include="kipon-ui\src\koMain.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koOver.directive.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koScrollY.component.ts" />
+    <TypeScriptCompile Include="kipon-ui\src\koTitlePanel.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koVerticalScroll.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koVerticalSplit.component.ts" />
     <TypeScriptCompile Include="kipon-ui\src\koView.component.ts" />
