@@ -52,7 +52,8 @@ export class KoDecimalDirective {
             case '6':
             case '7':
             case '8':
-            case '9': {
+            case '9':
+            case '-': {
                 this.bindValueBack();
                 return true;
             }
