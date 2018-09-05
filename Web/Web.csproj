@@ -102,6 +102,9 @@
     <Content Include="playground\src\assets\.gitkeep" />
     <Content Include="playground\src\tsconfig.app.json" />
     <Content Include="playground\src\tsconfig.spec.json" />
+    <Content Include="v2\kipon-ui\projects\kipon-ui\ng-package.json" />
+    <Content Include="v2\kipon-ui\projects\kipon-ui\package.json" />
+    <Content Include="v2\kipon-ui\src\assets\.gitkeep" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -121,6 +124,11 @@
     <Content Include="playground\.gitignore" />
     <Content Include="playground\karma.conf.js" />
     <Content Include="playground\protractor.conf.js" />
+    <Content Include="v2\kipon-ui\src\app\app.component.css" />
+    <Content Include="v2\kipon-ui\src\app\app.component.html" />
+    <Content Include="v2\kipon-ui\src\favicon.ico" />
+    <Content Include="v2\kipon-ui\src\index.html" />
+    <Content Include="v2\kipon-ui\src\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +157,19 @@
     <TypeScriptCompile Include="playground\src\main.ts" />
     <TypeScriptCompile Include="playground\src\polyfills.ts" />
     <TypeScriptCompile Include="playground\src\test.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.component.spec.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.component.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.module.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.service.spec.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.service.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\public_api.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\projects\kipon-ui\src\test.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\src\app\app.component.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\src\app\app.module.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\src\environments\environment.ts" />
+    <TypeScriptCompile Include="v2\kipon-ui\src\polyfills.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
