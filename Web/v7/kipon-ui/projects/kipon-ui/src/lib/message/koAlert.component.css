@@ -1,0 +1,24 @@
+﻿:host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 1s;
+    z-index: 1000;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+:host(.warning) {
+    background-color: #FFF19D;
+    border: 1px solid #D7D889;
+}
+
+:host(:before) {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+

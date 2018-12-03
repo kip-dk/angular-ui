@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { KoHorizontalScrollComponent } from './panels/koHorizontalScroll.component';
 import { KoHorizontalSplitComponent } from './panels/koHorizontalSplit.component';
 import { KoMainComponent } from './panels/koMain.component';
-import { KoScrollYComponent } from './panels/koScrollY.component';
 import { KoTitlePanelComponent } from './panels/koTitlePanel.component';
 import { KoVerticalScrollComponent } from './panels/koVerticalScroll.component';
 import { KoVerticalSplitComponent } from './panels/koVerticalSplit.component';
@@ -19,12 +19,12 @@ import { KoOverDirective } from './navigation/koOver.directive';
 
 @NgModule({
   imports: [
+    CommonModule
   ],
   declarations: [
     KoHorizontalScrollComponent,
     KoHorizontalSplitComponent,
     KoMainComponent,
-    KoScrollYComponent,
     KoTitlePanelComponent,
     KoVerticalScrollComponent,
     KoVerticalSplitComponent,
@@ -42,8 +42,7 @@ import { KoOverDirective } from './navigation/koOver.directive';
     KoMainComponent,
     KoHorizontalSplitComponent,
     KoHorizontalScrollComponent,
-    KoScrollYComponent,
-    KoTitlePanelComponent,  
+    KoTitlePanelComponent,
     KoVerticalScrollComponent,
     KoVerticalSplitComponent,
     KoViewComponent,

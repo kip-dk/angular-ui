@@ -5,7 +5,6 @@
 export * from './lib/panels/koHorizontalScroll.component';
 export * from './lib/panels/koHorizontalSplit.component';
 export * from './lib/panels/koMain.component';
-export * from './lib/panels/koScrollY.component';
 export * from './lib/panels/koTitlePanel.component';
 export * from './lib/panels/koVerticalScroll.component';
 export * from './lib/panels/koVerticalSplit.component';
