@@ -5,6 +5,9 @@
      [ngClass]="{ current: item.id == current, disabled: item.disabled == true && item.id != '##divider##', over: item == over, divider: item.id == '##divider##' }"
      (mouseover)="overItem(item)"
      (mouseleave)="outItem()">
-  <span *ngIf="item.title != null && item.title != '' && item.id != '##divider##'">{{ item.title }}</span>
+  <span *ngIf="item.title != null && item.title != '' && item.id != '##divider##' && item.cssClass==null && item.imgUrl==null">{{ item.title }}</span>
+  <span *ngIf="item.cssClass != null && item.cssClass != ''" [ngClass]="item.cssClass" [title]="item.title"></span>
+  <img *ngIf="item.imgUrl != null" [src]="item.imgUrl" [alt]="item.title" />
+
 </div>
 <ng-content></ng-content>

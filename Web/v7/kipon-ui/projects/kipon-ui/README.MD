@@ -210,8 +210,8 @@ Optionally you can add additional content to the menu bar.
    Additional content added after menus
 </ko-top-menu>
 ```
-
 And in the component:
+
 ```typescript
 import { KoNavigation, KoDivider } from 'kipon-ui';
 
@@ -233,6 +233,42 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+
+### ko-left-menu
+This component is designed to create a very simple left menu navigation
+
+You parse a list of navigation items (simply implement the KoNavigation, or use new (KoNavigationByCssClass or new KoNavigationByImgUrl)) depending on your need.
+
+The first version of the left menu has been designed to mostly support icon based menu. The best usage is to use icon classes or img url to keep the menu items short.
+The height of each menu-item i set to equals the width of the menu to create a perfect symetry.
+
+Optionally you can add additional content to the menu bar.
+
+<ko-left-menu [items]="array of KoNavigation" [(current)]="current selected value" (currentChange)="methodToCallOnChangeCurrentValue($event)">
+  Additional content added after menu
+</ko-left-menu>
+
+And in the component:
+
+```typescript
+import { KoNavigation, KoNavigationByCssClass } from 'kipon-ui';
+
+
+export class AppComponent implements OnInit {
+  items: KoNavigation[];
+  current: string;
+
+  ngOnInit(): void {
+    this.items = [];
+    this.items.push({ id: 'i1', title: 'A', disabled: false });
+    this.items.push({ id: 'i2', title: 'B', disabled: false });
+    this.items.push(new KoNavigationByCssClass("i3", "fa fa-archive", false, "Title mouse over on top menu"));
+
+    this.current = "i2";
+  }
+}
+```
+
 
 
 ## Like this?

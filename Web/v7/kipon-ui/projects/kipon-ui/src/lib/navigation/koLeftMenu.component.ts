@@ -1,0 +1,45 @@
+import { Component, Input, Output, EventEmitter, ElementRef, AfterViewInit } from '@angular/core';
+
+import { KoNavigation } from '../models/navigation.interface';
+
+@Component({
+  selector: 'ko-left-menu',
+  templateUrl: './koLeftMenu.component.html',
+  styleUrls: ['./koLeftMenu.component.css']
+
+})
+export class KoLeftMenuComponent implements AfterViewInit {
+
+  @Input('items') items: KoNavigation[] = [];
+  @Input('current') current: string;
+  @Output('currentChange') currentChange: EventEmitter<string> = new EventEmitter<string>();
+
+  itemheight: string;
+  over: KoNavigation;
+
+  constructor(private er: ElementRef) {
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(r => {
+      this.itemheight = (this.er.nativeElement.offsetWidth - 40).toString() + "px";
+    }, 1);
+  }
+
+  setCurrent(item: KoNavigation): void {
+    if (!item.disabled) {
+      this.current = item.id;
+      this.currentChange.emit(this.current);
+    }
+  }
+
+  overItem(v: KoNavigation): void {
+    if (!v.disabled) {
+      this.over = v;
+    }
+  }
+
+  outItem(): void {
+    this.over = null;
+  }
+}

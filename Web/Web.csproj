@@ -68,6 +68,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fa\css\all.css" />
+    <Content Include="fa\css\all.min.css" />
+    <Content Include="fa\css\brands.css" />
+    <Content Include="fa\css\brands.min.css" />
+    <Content Include="fa\css\fontawesome.css" />
+    <Content Include="fa\css\fontawesome.min.css" />
+    <Content Include="fa\css\regular.css" />
+    <Content Include="fa\css\regular.min.css" />
+    <Content Include="fa\css\solid.css" />
+    <Content Include="fa\css\solid.min.css" />
+    <Content Include="fa\css\svg-with-js.css" />
+    <Content Include="fa\css\svg-with-js.min.css" />
+    <Content Include="fa\css\v4-shims.css" />
+    <Content Include="fa\css\v4-shims.min.css" />
     <Content Include="kipon-ui\package.json" />
     <Content Include="kipon-ui\README.MD" />
     <Content Include="kipon-ui\src\koAlert.component.css" />
@@ -109,6 +123,8 @@
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koButtonGroup.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.html" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.css" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koTopMenu.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koTopMenu.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.css" />
@@ -193,6 +209,7 @@
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\models\navigation.interface.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koOver.directive.ts" />
+    <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koTopMenu.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalSplit.component.ts" />

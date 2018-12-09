@@ -18,6 +18,7 @@ export * from './lib/message/koAlert.component';
 
 export * from './lib/navigation/koOver.directive';
 export * from './lib/navigation/koTopMenu.component';
+export * from './lib/navigation/koLeftMenu.component';
 
 export * from './lib/models/navigation.interface';
 

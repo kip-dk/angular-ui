@@ -17,6 +17,9 @@ import { KoAlertComponent } from './message/koAlert.component';
 
 import { KoOverDirective } from './navigation/koOver.directive';
 import { KoTopMenuComponent } from './navigation/koTopMenu.component';
+import { KoLeftMenuComponent } from './navigation/koLeftMenu.component';
+
+import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl } from './models/navigation.interface';
 
 @NgModule({
   imports: [
@@ -38,7 +41,8 @@ import { KoTopMenuComponent } from './navigation/koTopMenu.component';
     KoAlertComponent,
 
     KoOverDirective,
-    KoTopMenuComponent
+    KoTopMenuComponent,
+    KoLeftMenuComponent,
   ],
   exports: [
     KoMainComponent,
@@ -56,7 +60,9 @@ import { KoTopMenuComponent } from './navigation/koTopMenu.component';
     KoAlertComponent,
 
     KoOverDirective,
-    KoTopMenuComponent
+    KoTopMenuComponent,
+    KoLeftMenuComponent,
+
   ]
 })
 export class KiponUiModule { }
