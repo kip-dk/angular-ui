@@ -1,11 +1,11 @@
 <ko-main>
   <ko-horizontal-split height="60px" fixed="top">
-    <ko-view ko-top>
-      the top view
-    </ko-view>
+    <ko-top-menu ko-top [items]="items" [(current)]="current">
+      Add your own content if needed
+    </ko-top-menu>
     <ko-vertical-split ko-bottom width="300px" fixed="left">
       <ko-title-panel ko-left>
-        <div ko-title>Virksomheder</div>
+        <div ko-title>Current select top menu: {{ current }}</div>
         <ko-view ko-body>
           hiraki over virks.
         </ko-view>
@@ -14,9 +14,33 @@
         <div ko-title>
           title panel title
         </div>
-        <ko-vertical-scroll ko-body>
-          the body of the title panel
-        </ko-vertical-scroll>
+        <ko-horizontal-split ko-body height="30px" fixed="bottom">
+          <ko-vertical-scroll ko-top>
+            <h3>Field focus test</h3>
+            <input name="felt1" [(ko-focus)]="focus.felt1" /><button (click)="focus1()">Focus 1</button><br />
+            <input name="felt2" [(ko-focus)]="focus.felt2" /><button (click)="focus2()">Focus 2</button><br />
+
+            <h3>Decimal input test</h3>
+            <input ko-decimal="2" [(ko-value)]="model.dn" (ko-valueChange)="dnWasChanged($event)" />
+
+
+            <h3>Test ko-over</h3>
+            <div [ko-over]="model">
+              <span *ngIf="model.over">&gt;&gt;&gt;&nbsp;</span>
+              try take the mouse over this area and see the result
+              <span *ngIf="model.over">&nbsp;&lt;&lt;&lt;<br /><br /></span>
+              <span *ngIf="model.over" style="font-weight: bold">It should be very visible that we have the mouse over</span>
+
+              <br />
+              <br />
+              <span *ngIf="model.over">This will only be visible when mouse is over the div, while t</span>
+              <span *ngIf="!model.over">T</span>his text should be visible at all time.
+            </div>
+          </ko-vertical-scroll>
+          <ko-alert class="warning" ko-bottom>
+            {{ model.message }}
+          </ko-alert>
+        </ko-horizontal-split>
       </ko-title-panel>
     </ko-vertical-split>
   </ko-horizontal-split>

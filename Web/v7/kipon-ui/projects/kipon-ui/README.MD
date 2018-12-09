@@ -1,0 +1,248 @@
+# kipon-ui version 1.x.x
+
+Kipon-ui is an angular 7 based framework with components that helps you organize an angular spa into panels, navigations and more.
+
+Version 0.x.x is targeting angular version equals and below 6, while 1.x.x is targeting angular 7.
+
+The ui framework has been build with the purpose of creating fullcscreen application where you need to organize the page into areas (or panels if you like).
+
+The framework has not been build to solve every ui component need in the world, instead it works well togeter ex. with @angular/material.
+
+I use the framework to share common ui organizations problem between my customer portefolio. If you have the same needs in your application, feel free
+to use the library as is, and post issues on the GIT.
+
+## Install and use
+
+```bash
+$ npm install kipon-ui --save
+```
+
+Then include the library in your angular module definition
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgModule } from '@angular/core';
+
+import { KiponUiModule } from 'kipon-ui'
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+
+    KiponUiModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+## Below documentation
+
+{html-property=""} means that the property is optional. {} should be omitted in the html.
+html-property="[value1 | value2 ]" means that the property can have ether value1 or value2
+
+## Components
+All components are prefixed ko-. Selector properties are also prefixed ko, while data properties keeps there plain natural name.
+
+### Panels
+
+#### ko-main
+The ko-main component is simply creating a panel that takes up all space in the context where it has been defined. If this component
+is used as the top level komponent, just hafter <body>... in the html page, it will ensure that the panel defined is taking up
+all space on the browser. You should have only one single ko-main component in your application, and it should be the top komponent, just after the <body>
+on your page.
+
+```html
+<ko-main></ko-main>
+```
+
+#### ko-view
+Ko view is typically used to define a nested panel in a component, where all space in the area is taking up by the view. The view
+component is by default hiding x-based content overflow, but addng y-based content scroll on a need base. Default it is
+adding a 2px padding on all sides.
+
+css classes:
+* no-padding: Suppress padding on the container
+* pad20: Set padding 20 20 on all sites.
+
+
+```html
+<ko-view {class="[no-padding | pad20]"}></ko-view>
+```
+
+#### ko-vertical-scroll
+As the name indicates, this component will take up all the space and add fixed vertical scroll, and hide horizontal overflow. The scrollbar will be there
+at all time, even if it is not needed.
+
+```html
+<ko-vertical-scroll></ko-vertical-scroll>
+```
+
+#### ko-horizontal-scroll
+As the name indicates, this component will take up all space and add fixed horizontal scroll. The scrollbare will be there at all time,
+even if it is not needed.
+
+```html
+<ko-horizontal-scroll></ko-horizontal-scroll>
+```
+
+#### ko-vertical-split.
+The komponent will split the panel in a left side and a right side. 
+
+The fixed property indicates if it is the left or the right panel that should have a fixed initial width. Default is left.
+The width property is defining the width of the fixed panel. Default is 50%.
+
+You must nest two components inside the vertical split, to define the
+content of the left side and the right side. One of these components should be marked with an attribute "ko-left", indicating that it is the
+left side panel, and the other should be marked "ko-right". In the example below we are using <ko-view>, but it can be any component, including
+standard html tag such as &lt;div&gt;.
+
+```html
+<ko-vertical-split {fixed="[left | right]"} {width="300px"}>
+   <ko-view ko-left>content for left panel</ko-view>
+   <ko-view ko-right>content for right panel</ko-view>
+</ko-vertical-split>
+```
+
+#### ko-horizontal-split.
+The komponent will split the panel in a topand a bottom. 
+
+The fixed property indicates if it is the top or the bottom panel that should have a fixed initial height. Default is top.
+The height property is defining the height of the fixed panel. Default is 50%.
+
+You must nest two components inside the vertical split, to define the
+content of the top and the bottom. One of these components should be marked with an attribute "ko-top", indicating that it is the
+top panel, and the other should be marked "ko-bottom". In the example below we are using <ko-view>, but it can be any component, including
+standard html tag such as &lt;div&gt;.
+
+```html
+<ko-horizontal-split {fixed="[top | bottom]"} {height="30px"}>
+   <ko-view ko-top>content for top panel</ko-view>
+   <ko-view ko-bottom>content for bottom panel</ko-view>
+</ko-horizontal-split>
+```
+
+#### ko-title-panel
+This component is creating a title/body panel.
+
+You must nest two components and set ko-title as property on the title part, and ko-body on the body part.
+
+```html
+<ko-title-panel>
+     <ko-view ko-title>The title of the panel</ko-view>
+     <ko-view ko-body>The body of the panel</ko-view>
+</ko-title-panel>
+```
+
+### Messages
+
+#### ko-alert
+Alert text box that takes up all space and is vertical centering the content. 
+
+<ko-alert {class="warning"}></ko-alert>
+
+
+### Forms
+
+#### ko-decimal (directive)
+This is a directive you can add to input fields to. The purpose is to ensure that the input only takes decimal number input
+
+The value parsed to -ko-valueChange is the new decimal value of the field, but remember, by using the banana-in-box syntax, the
+value can be binded both way, with having to explicitly listen to changes.
+
+```html
+<input ko-decimal="number of decimals" [(ko-value)]="yourmodel.decimalfield" {(ko-valueChange)="callMeOnChangeOfTheFieldFunction($event)"} />
+```
+
+#### ko-focus (directive)
+Simple directive to give an input control focus, whenever a variable is set to true. 
+
+```html
+<input [(ko-focus)]="model.focusFieldX" />
+```
+
+And in the controller script:
+```typescript
+
+doFocus(): void {
+  this.model.focusFieldX = true;
+}
+
+```
+
+### Navigation
+
+### ko-over
+This directive is simply adding and removing a fixed property named "over" on the object parsed the the directive.
+The purpose is to make it easy ex. to use *ngIf on nested html that should be there depending on the mouse-over state
+of the model class.
+
+```html
+<div [ko-over]="myobject">
+   <span *ngIf="myobject.over">This will only be visible when mouse is over the div, while t</span>
+   <span *ngIf="!myobject.over">T</span>his text should be visible at all time.
+</div>
+```
+
+### ko-top-menu
+This component is designed to create a very simple top menu navigation
+
+You parse a list of navigation items (simply implement the KoNavigation interface), and set the component property to handle witch is current.
+The current property with banana-in-box pattern allow the value to be parsed both way. You can listen to changes with currentChange event. It
+will parse the id of the selected navigation item.
+
+Optionally you can add additional content to the menu bar.
+
+```html
+<ko-top-menu [items]="array of KoNavigation" [(current)]="current selected value" {(currentChange)="methodToCallOnChangeCurrentValue($event)"}>
+   Additional content added after menus
+</ko-top-menu>
+```
+
+And in the component:
+```typescript
+import { KoNavigation, KoDivider } from 'kipon-ui';
+
+
+export class AppComponent implements OnInit {
+  items: KoNavigation[];
+  current: string;
+
+  ngOnInit(): void {
+    this.items = [];
+    this.items.push({ id: 'i1', title: 'Title 1', disabled: false });
+    this.items.push({ id: 'i2', title: 'Title 2', disabled: false });
+    this.items.push({ id: 'i3', title: 'Title 3', disabled: true });
+    this.items.push({ id: 'i4', title: 'Title 4', disabled: false });
+    this.items.push(new KoDivider());
+    this.items.push({ id: 'i5', title: 'Title 5', disabled: false });
+    this.items.push({ id: 'i6', title: 'Title 6', disabled: false });
+    this.current = "i2";
+  }
+}
+```
+
+
+## Like this?
+If you like this library, please go to the git repository and give it a star. That will confirm for other potential developers that this could be a good track.
+
+[Goto git repository](https://github.com/kip-dk/angular-ui) <br />
+
+If you have issues, ideas or so, do not hesitate to post an issue on GIT. I try to be responsive and appriciate any input from you.
+
+
+## License
+MIT © [Kipon ApS, 2018](mailto:kip@kipon.dk)
+

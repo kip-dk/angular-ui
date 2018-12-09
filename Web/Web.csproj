@@ -109,6 +109,8 @@
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koButtonGroup.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.html" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koTopMenu.component.css" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koTopMenu.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalSplit.component.css" />
@@ -128,6 +130,9 @@
     <Content Include="v7\kipon-ui\src\browserslist" />
     <Content Include="v7\kipon-ui\tsconfig.json" />
     <Content Include="v7\kipon-ui\buildlib.cmd" />
+    <Content Include="v7\kipon-ui\releaselib.cmd" />
+    <Content Include="v7\kipon-ui\run.cmd" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\README.MD" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -186,7 +191,9 @@
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koFocus.directive.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.module.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.ts" />
+    <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\models\navigation.interface.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koOver.directive.ts" />
+    <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koTopMenu.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koHorizontalSplit.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koMain.component.ts" />

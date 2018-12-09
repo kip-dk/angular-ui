@@ -1,0 +1,10 @@
+<div class="ko-top-menu-corner" [style.width]="topcornerwidth"></div>
+<div *ngFor="let item of items"
+     (click)="setCurrent(item)"
+     class="ko-top-menu-item"
+     [ngClass]="{ current: item.id == current, disabled: item.disabled == true && item.id != '##divider##', over: item == over, divider: item.id == '##divider##' }"
+     (mouseover)="overItem(item)"
+     (mouseleave)="outItem()">
+  <span *ngIf="item.title != null && item.title != '' && item.id != '##divider##'">{{ item.title }}</span>
+</div>
+<ng-content></ng-content>

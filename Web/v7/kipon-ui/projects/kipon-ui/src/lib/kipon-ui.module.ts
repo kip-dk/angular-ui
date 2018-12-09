@@ -16,6 +16,7 @@ import { KoFocusDirective } from './forms/koFocus.directive';
 import { KoAlertComponent } from './message/koAlert.component';
 
 import { KoOverDirective } from './navigation/koOver.directive';
+import { KoTopMenuComponent } from './navigation/koTopMenu.component';
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { KoOverDirective } from './navigation/koOver.directive';
 
     KoAlertComponent,
 
-    KoOverDirective
+    KoOverDirective,
+    KoTopMenuComponent
   ],
   exports: [
     KoMainComponent,
@@ -53,7 +55,8 @@ import { KoOverDirective } from './navigation/koOver.directive';
 
     KoAlertComponent,
 
-    KoOverDirective
+    KoOverDirective,
+    KoTopMenuComponent
   ]
 })
 export class KiponUiModule { }

@@ -1,4 +1,4 @@
-﻿import { Directive, ElementRef, HostListener, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 
 @Directive({
     selector: '[ko-decimal]'
@@ -111,7 +111,7 @@ export class KoDecimalDirective {
                 if (v == null || v == '') {
                     this._setValue(null, false);
                 } else {
-                    this._setValue(Number(v.replace(',','.')), false);
+                  this._setValue(Number(v.replace(',','.')), false);
                 }
             }
         }, timeout);

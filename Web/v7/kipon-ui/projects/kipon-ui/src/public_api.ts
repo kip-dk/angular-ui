@@ -17,5 +17,9 @@ export * from './lib/forms/koFocus.directive';
 export * from './lib/message/koAlert.component';
 
 export * from './lib/navigation/koOver.directive';
+export * from './lib/navigation/koTopMenu.component';
+
+export * from './lib/models/navigation.interface';
+
 
 export * from './lib/kipon-ui.module';
