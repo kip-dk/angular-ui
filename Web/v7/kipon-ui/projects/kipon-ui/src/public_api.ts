@@ -15,6 +15,7 @@ export * from './lib/forms/koDecimal.directive';
 export * from './lib/forms/koFocus.directive';
 
 export * from './lib/message/koAlert.component';
+export * from './lib/message/koHeader.component';
 
 export * from './lib/navigation/koOver.directive';
 export * from './lib/navigation/koTopMenu.component';

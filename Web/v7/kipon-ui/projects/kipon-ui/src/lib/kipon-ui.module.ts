@@ -14,6 +14,7 @@ import { KoDecimalDirective } from './forms/koDecimal.directive';
 import { KoFocusDirective } from './forms/koFocus.directive';
 
 import { KoAlertComponent } from './message/koAlert.component';
+import { KoHeaderComponent } from './message/koHeader.component';
 
 import { KoOverDirective } from './navigation/koOver.directive';
 import { KoTopMenuComponent } from './navigation/koTopMenu.component';
@@ -39,6 +40,7 @@ import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl
     KoFocusDirective,
 
     KoAlertComponent,
+    KoHeaderComponent,
 
     KoOverDirective,
     KoTopMenuComponent,
@@ -58,11 +60,11 @@ import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl
     KoFocusDirective,
 
     KoAlertComponent,
+    KoHeaderComponent,
 
     KoOverDirective,
     KoTopMenuComponent,
     KoLeftMenuComponent,
-
   ]
 })
 export class KiponUiModule { }

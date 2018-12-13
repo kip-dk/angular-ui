@@ -1,0 +1,31 @@
+:host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 1s;
+    overflow: hidden;
+    border: none;
+}
+
+:host(.warning) {
+    background-color: #FFF19D;
+    border: none;
+}
+
+:host(:before) {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+:host > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: large;
+}
+

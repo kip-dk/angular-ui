@@ -121,6 +121,8 @@
     <Content Include="v7\kipon-ui\projects\kipon-ui\package.json" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koButtonGroup.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koButtonGroup.component.html" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koHeader.component.css" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koHeader.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.css" />
@@ -206,6 +208,7 @@
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koDecimal.directive.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\forms\koFocus.directive.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\kipon-ui.module.ts" />
+    <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koHeader.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\message\koAlert.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\models\navigation.interface.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\navigation\koOver.directive.ts" />

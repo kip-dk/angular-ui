@@ -146,6 +146,21 @@ You must nest two components and set ko-title as property on the title part, and
 </ko-title-panel>
 ```
 
+#### ko-header
+This component is loosely related to the ko-title-panel. It can be used as the ko-title component to add a simple text title on the panel that is
+centralized.
+
+```html
+<ko-title-panel>
+     <ko-header ko-title>The title of the panel</ko-header>
+     <ko-view ko-body>The body of the panel</ko-view>
+</ko-title-panel>
+```
+But the tag will also work outside the ko-title-panel, if you need to create a header that is centralizing in the component and takes up all space
+
+```html
+<ko-header>The title goes here</koheader>
+```
 ### Messages
 
 #### ko-alert
