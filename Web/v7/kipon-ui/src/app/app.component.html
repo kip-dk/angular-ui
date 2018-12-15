@@ -5,11 +5,35 @@
     </ko-top-menu>
     <ko-vertical-split ko-bottom width="60px" fixed="left">
       <ko-left-menu ko-left [items]="lItems" [(current)]="lCurrent">...</ko-left-menu>
-      <ko-vertical-split ko-right width="300px">
+      <ko-vertical-split ko-right width="400px">
         <ko-title-panel ko-left>
-          <ko-header ko-title>Current select top menu: {{ current }}</ko-header>
+          <ko-header ko-title>
+            <span class="fa fa-angle-up" (click)="toggleAll()" *ngIf="!all"></span>
+            <span class="fa fa-angle-down" (click)="toggleAll()" *ngIf="all"></span>
+            Current select top menu: {{ current }}
+          </ko-header>
           <ko-view ko-body>
-            current left menu: {{ lCurrent }}
+            <ko-expansion-panel [(expanded)]="expand1">
+              <div ko-title>1. current left menu: {{ lCurrent }}</div>
+              <div ko-body>
+                noget tekst noget
+              </div>
+            </ko-expansion-panel>
+
+            <ko-expansion-panel [(expanded)]="expand2">
+              <div ko-title>2. current left menu: {{ lCurrent }}</div>
+              <div ko-body>
+                noget tekst noget, med flere linjer<br />
+                Linje 1<br />
+                Linje 2<br />
+                Linje 3<br />
+                Linje 4<br />
+                Linje 5<br />
+                Linje 6<br />
+                Linje 7<br />
+              </div>
+            </ko-expansion-panel>
+
           </ko-view>
         </ko-title-panel>
         <ko-title-panel ko-right>

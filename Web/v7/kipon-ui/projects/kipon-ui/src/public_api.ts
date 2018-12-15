@@ -9,6 +9,7 @@ export * from './lib/panels/koTitlePanel.component';
 export * from './lib/panels/koVerticalScroll.component';
 export * from './lib/panels/koVerticalSplit.component';
 export * from './lib/panels/koView.component';
+export * from './lib/panels/koExpansionPanel.component';
 
 export * from './lib/forms/koButtonGroup.component';
 export * from './lib/forms/koDecimal.directive';

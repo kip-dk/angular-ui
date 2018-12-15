@@ -161,12 +161,28 @@ But the tag will also work outside the ko-title-panel, if you need to create a h
 ```html
 <ko-header>The title goes here</koheader>
 ```
+
+#### ko-expansion-panel
+This component is creating a floating (take up 100% width, do not take up 100% height) title / body component, where the body can be hidden using a toggler.
+
+This component is using Font Awsome icon. For now i did not add alterntive because i am always including fa.
+
+The expandedChange will simply parse the new state of the component. (expanded or not).
+
+```html
+<ko-expansion-panel {[(expanded)]="bool telling if the panel is expanded"} (expandedChange)="callMeOnChange($event)">
+   <div ko-title>Title goes here</div>
+   <div ko-body>Body goes here</body>
+</ko-expansion-panel>
+```
+
 ### Messages
 
 #### ko-alert
 Alert text box that takes up all space and is vertical centering the content. 
 
 <ko-alert {class="warning"}></ko-alert>
+
 
 
 ### Forms

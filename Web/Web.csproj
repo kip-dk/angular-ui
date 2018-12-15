@@ -141,6 +141,8 @@
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koVerticalScroll.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koVerticalSplit.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koVerticalSplit.component.html" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koExpansionPanel.component.css" />
+    <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koExpansionPanel.component.html" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koView.component.css" />
     <Content Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koView.component.html" />
     <Content Include="v7\kipon-ui\README.md" />
@@ -220,6 +222,7 @@
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koTitlePanel.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koVerticalScroll.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koVerticalSplit.component.ts" />
+    <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koExpansionPanel.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\lib\panels\koView.component.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\public_api.ts" />
     <TypeScriptCompile Include="v7\kipon-ui\projects\kipon-ui\src\test.ts" />

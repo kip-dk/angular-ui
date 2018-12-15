@@ -15,6 +15,10 @@ export class AppComponent implements OnInit {
   current: string;
   lCurrent: string;
 
+  expand1: boolean = true;
+  expand2: boolean = true;
+  all: boolean = true;
+
   ngOnInit(): void {
     this.items = [];
     this.items.push({ id: 'i1', title: 'Title 1', disabled: false });
@@ -54,5 +58,11 @@ export class AppComponent implements OnInit {
 
   dnWasChanged(v: number) {
     this.model.message = 'The number is now: ' + v.toString();
+  }
+
+  toggleAll(): void {
+    this.expand1 = !this.all;
+    this.expand2 = !this.all;
+    this.all = !this.all;
   }
 }

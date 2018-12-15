@@ -8,6 +8,7 @@ import { KoTitlePanelComponent } from './panels/koTitlePanel.component';
 import { KoVerticalScrollComponent } from './panels/koVerticalScroll.component';
 import { KoVerticalSplitComponent } from './panels/koVerticalSplit.component';
 import { KoViewComponent } from './panels/koView.component';
+import { KoExpansionPanelComponent } from './panels/koExpansionPanel.component';
 
 import { KoButtonGroupComponent } from './forms/koButtonGroup.component';
 import { KoDecimalDirective } from './forms/koDecimal.directive';
@@ -34,6 +35,7 @@ import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl
     KoVerticalScrollComponent,
     KoVerticalSplitComponent,
     KoViewComponent,
+    KoExpansionPanelComponent,
 
     KoButtonGroupComponent,
     KoDecimalDirective,
@@ -54,6 +56,7 @@ import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl
     KoVerticalScrollComponent,
     KoVerticalSplitComponent,
     KoViewComponent,
+    KoExpansionPanelComponent,
 
     KoButtonGroupComponent,
     KoDecimalDirective,
