@@ -5,9 +5,6 @@ import { Directive, ElementRef, HostListener, Input, Output, EventEmitter, Simpl
 })
 export class KoDecimalDirective {
     constructor(private el: ElementRef) {
-        if (el.nativeElement) {
-            el.nativeElement.style['text-align'] = 'right';
-        }
     }
 
     @Input('ko-decimal') decimals: number = 2;
@@ -22,6 +19,8 @@ export class KoDecimalDirective {
         this._setValue(val, true);
     }
 
+    @Input('align') align: string = 'right';
+
     private _setValue(val: number, internal: boolean): void {
         this._value = val;
         if (!internal) {
@@ -33,7 +32,11 @@ export class KoDecimalDirective {
     syncThread;
 
     ngOnChanges(changes) {
-        this.setValueString();
+      this.setValueString();
+
+      if (this.el.nativeElement) {
+        this.el.nativeElement.style['text-align'] = this.align;
+      }
     }
 
     @HostListener('keydown',['$event']) onKeydown($event) {

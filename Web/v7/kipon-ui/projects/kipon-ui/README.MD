@@ -193,8 +193,10 @@ This is a directive you can add to input fields to. The purpose is to ensure tha
 The value parsed to -ko-valueChange is the new decimal value of the field, but remember, by using the banana-in-box syntax, the
 value can be binded both way, with having to explicitly listen to changes.
 
+Align property was introduced in version 1.0.7 and allow you to the how the input field should be aligned. Default is right.
+
 ```html
-<input ko-decimal="number of decimals" [(ko-value)]="yourmodel.decimalfield" {(ko-valueChange)="callMeOnChangeOfTheFieldFunction($event)"} />
+<input ko-decimal="number of decimals" [(ko-value)]="yourmodel.decimalfield" {(ko-valueChange)="callMeOnChangeOfTheFieldFunction($event)"} {align="left|center|right"}/>
 ```
 
 #### ko-focus (directive)
