@@ -152,14 +152,14 @@ centralized.
 
 ```html
 <ko-title-panel>
-     <ko-header ko-title>The title of the panel</ko-header>
+     <ko-header {align="left|center|right"} ko-title>The title of the panel</ko-header>
      <ko-view ko-body>The body of the panel</ko-view>
 </ko-title-panel>
 ```
 But the tag will also work outside the ko-title-panel, if you need to create a header that is centralizing in the component and takes up all space
 
 ```html
-<ko-header>The title goes here</koheader>
+<ko-header>The title goes here</ko-header>
 ```
 
 #### ko-expansion-panel
@@ -181,7 +181,7 @@ The expandedChange will simply parse the new state of the component. (expanded o
 #### ko-alert
 Alert text box that takes up all space and is vertical centering the content. 
 
-<ko-alert {class="warning"}></ko-alert>
+<ko-alert {class="warning"} {align="left|center|right"}></ko-alert>
 
 
 

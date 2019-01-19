@@ -25,5 +25,8 @@
         "dist/kipon-ui/*"
       ]
     }
-  }
+  },
+  "exclude": [
+    "node_modules/*"
+  ]
 }

@@ -7,7 +7,7 @@
       <ko-left-menu ko-left [items]="lItems" [(current)]="lCurrent">...</ko-left-menu>
       <ko-vertical-split ko-right width="400px">
         <ko-title-panel ko-left>
-          <ko-header ko-title>
+          <ko-header ko-title align="right">
             <span class="fa fa-angle-up" (click)="toggleAll()" *ngIf="!all"></span>
             <span class="fa fa-angle-down" (click)="toggleAll()" *ngIf="all"></span>
             Current select top menu: {{ current }}
@@ -63,7 +63,7 @@
                 <span *ngIf="!model.over">T</span>his text should be visible at all time.
               </div>
             </ko-vertical-scroll>
-            <ko-alert class="warning" ko-bottom>
+            <ko-alert class="warning" align="right" ko-bottom>
               {{ model.message }}
             </ko-alert>
           </ko-horizontal-split>

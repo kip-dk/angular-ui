@@ -7,6 +7,8 @@ import { Component, Input, Output, EventEmitter, SimpleChanges } from '@angular/
 })
 
 export class KoHeaderComponent {
+
+  @Input('align') align: string = 'left';
     constructor() {
     }
 }

@@ -1,4 +1,4 @@
-﻿import { Component, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 
 @Component({
     selector: 'ko-alert',
@@ -7,6 +7,8 @@
 })
 
 export class KoAlertComponent {
+
+  @Input('align') align: string = 'left';
     constructor() {
     }
 }
