@@ -28,8 +28,12 @@ export class KoTopMenuComponent implements AfterViewInit {
 
   setCurrent(item: KoNavigation): void {
     if (!item.disabled) {
-      this.current = item.id;
-      this.currentChange.emit(this.current);
+      if (item.click == null) {
+        this.current = item.id;
+        this.currentChange.emit(this.current);
+      } else {
+        item.click();
+      }
     }
   }
 

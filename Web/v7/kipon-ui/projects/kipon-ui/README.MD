@@ -255,13 +255,13 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = [];
-    this.items.push({ id: 'i1', title: 'Title 1', disabled: false });
-    this.items.push({ id: 'i2', title: 'Title 2', disabled: false });
-    this.items.push({ id: 'i3', title: 'Title 3', disabled: true });
-    this.items.push({ id: 'i4', title: 'Title 4', disabled: false });
+    this.items.push({ id: 'i1', title: 'Title 1', disabled: false, click: null });
+    this.items.push({ id: 'i2', title: 'Title 2', disabled: false, click: null });
+    this.items.push({ id: 'i3', title: 'Title 3', disabled: true, click: null });
+    this.items.push({ id: 'i4', title: 'Title 4', disabled: false, click: null });
     this.items.push(new KoDivider());
-    this.items.push({ id: 'i5', title: 'Title 5', disabled: false });
-    this.items.push({ id: 'i6', title: 'Title 6', disabled: false });
+    this.items.push({ id: 'i5', title: 'Title 5', disabled: false, click: null });
+    this.items.push({ id: 'i6', title: 'Title 6', disabled: false, click: this.callMeInsteadOfChangeCurrent });
     this.current = "i2";
   }
 }
@@ -293,8 +293,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = [];
-    this.items.push({ id: 'i1', title: 'A', disabled: false });
-    this.items.push({ id: 'i2', title: 'B', disabled: false });
+    this.items.push({ id: 'i1', title: 'A', disabled: false, click: null });
+    this.items.push({ id: 'i2', title: 'B', disabled: false, click: null });
+    this.items.push({ id: 'co', title: 'C', disabled: false, click: this.callMeInsteadOfChangeCurrent });
     this.items.push(new KoNavigationByCssClass("i3", "fa fa-archive", false, "Title mouse over on top menu"));
 
     this.current = "i2";
