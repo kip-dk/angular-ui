@@ -3,8 +3,7 @@ import { Component, Input, ElementRef, ViewChild, ViewEncapsulation, OnChanges }
 @Component({
   selector: 'ko-table-panel',
   templateUrl: './koTablePanel.component.html',
-  styleUrls: ['./koTablePanel.component.css'],
-  encapsulation: ViewEncapsulation.Emulated
+  styleUrls: ['./koTablePanel.component.css']
 })
 
 export class KoTablePanelComponent implements OnChanges {
@@ -39,7 +38,6 @@ export class KoTablePanelComponent implements OnChanges {
     const header = this.tableheader.nativeElement as HTMLElement;
     const body = this.tablebody.nativeElement as HTMLElement;
 
-    // do logic and set
     header.scrollLeft = body.scrollLeft;
   }
 }
