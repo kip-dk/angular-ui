@@ -12,29 +12,52 @@
             <span class="fa fa-angle-down" (click)="toggleAll()" *ngIf="all"></span>
             Current select top menu: {{ current }}
           </ko-header>
-          <ko-view ko-body>
-            <ko-expansion-panel [(expanded)]="expand1">
-              <div ko-title>1. current left menu: {{ lCurrent }}</div>
-              <div ko-body>
-                noget tekst noget
-              </div>
-            </ko-expansion-panel>
+          <ko-horizontal-split height="50%" ko-body>
+            <ko-view ko-top>
+              <ko-expansion-panel [(expanded)]="expand1">
+                <div ko-title>1. current left menu: {{ lCurrent }}</div>
+                <div ko-body>
+                  noget tekst noget
+                </div>
+              </ko-expansion-panel>
 
-            <ko-expansion-panel [(expanded)]="expand2">
-              <div ko-title>2. current left menu: {{ lCurrent }}</div>
-              <div ko-body>
-                noget tekst noget, med flere linjer<br />
-                Linje 1<br />
-                Linje 2<br />
-                Linje 3<br />
-                Linje 4<br />
-                Linje 5<br />
-                Linje 6<br />
-                Linje 7<br />
-              </div>
-            </ko-expansion-panel>
-
-          </ko-view>
+              <ko-expansion-panel [(expanded)]="expand2">
+                <div ko-title>2. current left menu: {{ lCurrent }}</div>
+                <div ko-body>
+                  noget tekst noget, med flere linjer<br />
+                  Linje 1<br />
+                  Linje 2<br />
+                  Linje 3<br />
+                  Linje 4<br />
+                  Linje 5<br />
+                  Linje 6<br />
+                  Linje 7<br />
+                </div>
+              </ko-expansion-panel>
+            </ko-view>
+            <ko-table-panel ko-bottom>
+              <table ko-table-header>
+                <tr>
+                  <th class="t1">Header 1</th>
+                  <th class="t1">Header 2</th>
+                  <th class="t1">Header 3</th>
+                  <th class="t1">Header 4</th>
+                  <th class="t1">Header 5</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </table>
+              <table ko-table-body>
+                <tr *ngFor="let number of numbers">
+                  <td class="t1">Felt 1, {{number}}</td>
+                  <td class="t1">Felt 2, {{number}}</td>
+                  <td class="t1">Felt 3, {{number}}</td>
+                  <td class="t1">Felt 4, {{number}}</td>
+                  <td class="t1">Felt 5, {{number}}</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </ko-table-panel>
+          </ko-horizontal-split>
         </ko-title-panel>
         <ko-title-panel ko-right>
           <div ko-title>

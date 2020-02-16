@@ -162,6 +162,21 @@ But the tag will also work outside the ko-title-panel, if you need to create a h
 <ko-header>The title goes here</ko-header>
 ```
 
+### ko-table-panel
+This component handles horizontal scroll between a header panel and a body panel. The naming is stricly to create associations to its usage,
+but the concept is not limited to be used with tables. The lower panel will always have vertical scroll, and will show horizontal scroll if needed.
+When the lower panel is scrolled left-right, the upper panel will be scrolled accordingly.
+```html
+<ko-table-panel>
+  <table ko-table-header>
+    header rows
+  </table>
+  <table ko-table-body>
+    body rows
+  </table>
+</ko-table-panel>
+```
+
 #### ko-expansion-panel
 This component is creating a floating (take up 100% width, do not take up 100% height) title / body component, where the body can be hidden using a toggler.
 
