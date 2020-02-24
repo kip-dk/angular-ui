@@ -1,6 +1,9 @@
 <div class="ko-table-header" [ngStyle]="topStyle" #tableheader>
-    <ng-content select="[ko-table-header]"></ng-content>
+  <ng-content select="[ko-table-header]"></ng-content>
 </div>
-<div class="ko-table-body" [ngStyle]="botStyle" #tablebody (scroll)="updateScroll()">
-    <ng-content select="[ko-table-body]"></ng-content>
+<div class="ko-table-body" [ngStyle]="bodStyle" #tablebody (scroll)="updateScroll()">
+  <ng-content select="[ko-table-body]"></ng-content>
+</div>
+<div class="ko-table-footer" [ngStyle]="fotStyle" #tablefooter>
+  <ng-content select="[ko-table-footer]"></ng-content>
 </div>
