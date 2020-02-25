@@ -164,15 +164,20 @@ But the tag will also work outside the ko-title-panel, if you need to create a h
 
 ### ko-table-panel
 This component handles horizontal scroll between a header panel and a body panel. The naming is stricly to create associations to its usage,
-but the concept is not limited to be used with tables. The lower panel will always have vertical scroll, and will show horizontal scroll if needed.
+but the concept is not limited to be used with tables. The body panel will always have vertical scroll, and will show horizontal scroll if needed.
 When the lower panel is scrolled left-right, the upper panel will be scrolled accordingly.
+
+(from version 1.0.13) If there is a footer panel, the ko-table-footer panel will host the horizontal scroll-bar instead of the body.
 ```html
-<ko-table-panel>
+<ko-table-panel height="40px 60px">
   <table ko-table-header>
     header rows
   </table>
   <table ko-table-body>
     body rows
+  </table>
+  <table ko-table-footer>
+    footer rows
   </table>
 </ko-table-panel>
 ```

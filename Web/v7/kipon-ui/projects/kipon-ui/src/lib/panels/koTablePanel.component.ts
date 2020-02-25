@@ -44,12 +44,17 @@ export class KoTablePanelComponent implements OnChanges, AfterViewInit {
     const body = this.tablebody.nativeElement as HTMLElement;
     const footer = this.tablefooter.nativeElement as HTMLElement;
 
+    var toScroll = this.hasFot ? footer.scrollLeft : body.scrollLeft;
+
     if (this.hasTop) {
-      header.scrollLeft = body.scrollLeft;
+      header.scrollLeft = toScroll;
     }
+
     if (this.hasFot) {
-      footer.scrollLeft = body.scrollLeft;
+      footer.scrollLeft = toScroll;
     }
+
+    body.scrollLeft = toScroll;
   }
 
   private setStyle(): void {
@@ -77,7 +82,8 @@ export class KoTablePanelComponent implements OnChanges, AfterViewInit {
 
       this.bodStyle = {
         top: this.topHeight,
-        bottom: this.fotHeight
+        bottom: this.fotHeight,
+        "overflow-x": "hidden"
       };
 
       this.fotStyle = {
@@ -95,7 +101,8 @@ export class KoTablePanelComponent implements OnChanges, AfterViewInit {
 
       this.bodStyle = {
         top: this.topHeight,
-        bottom: 0
+        bottom: 0,
+        "overflow-x" : "auto"
       };
 
       this.fotStyle = {

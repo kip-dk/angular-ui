@@ -6,6 +6,14 @@
   bottom: 0;
 }
 
+:host div.ko-table {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 :host div.ko-table-header {
     position: absolute;
     left: 0;
@@ -34,6 +42,6 @@
     bottom: 0;
     height: 40px;
     border: none;
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
 }
