@@ -1,4 +1,4 @@
-﻿:host {
+:host {
     position: absolute;
     left: 0;
     right: 0;
@@ -15,6 +15,14 @@
     border-width: 0 0 1px 0;
     border-color: lightgray;
 }
+
+:host.raw .ko-top,
+:host.raw .ko-bottom {
+    border: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 
 :host .ko-bottom {
     position: absolute;

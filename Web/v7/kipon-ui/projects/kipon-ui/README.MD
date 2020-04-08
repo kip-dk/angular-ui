@@ -109,8 +109,10 @@ content of the left side and the right side. One of these components should be m
 left side panel, and the other should be marked "ko-right". In the example below we are using <ko-view>, but it can be any component, including
 standard html tag such as &lt;div&gt;.
 
+If class raw is added to the host tag, no borders will be added, and padding and margin will be set explicit to 0
+
 ```html
-<ko-vertical-split {fixed="[left | right]"} {width="300px"}>
+<ko-vertical-split {fixed="[left | right]"} {width="300px"} {class="raw"}>
    <ko-view ko-left>content for left panel</ko-view>
    <ko-view ko-right>content for right panel</ko-view>
 </ko-vertical-split>
@@ -127,8 +129,10 @@ content of the top and the bottom. One of these components should be marked with
 top panel, and the other should be marked "ko-bottom". In the example below we are using <ko-view>, but it can be any component, including
 standard html tag such as &lt;div&gt;.
 
+If class raw is added to the host tag, no borders will be added, and padding and margin will be set explicit to 0
+
 ```html
-<ko-horizontal-split {fixed="[top | bottom]"} {height="30px"}>
+<ko-horizontal-split {fixed="[top | bottom]"} {height="30px"} {class="raw"}>
    <ko-view ko-top>content for top panel</ko-view>
    <ko-view ko-bottom>content for bottom panel</ko-view>
 </ko-horizontal-split>
