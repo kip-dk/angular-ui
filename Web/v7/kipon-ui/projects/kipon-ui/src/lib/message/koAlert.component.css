@@ -53,6 +53,12 @@
   width: calc(100% - 30px);
 }
 
+:host(.raw) > div {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
 :host > div.left {
   text-align: left;
 }

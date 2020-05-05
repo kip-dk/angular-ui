@@ -1,8 +1,8 @@
-﻿import { Directive, ElementRef, HostListener, Input, Output, EventEmitter, SimpleChanges, OnChanges, Renderer } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, Output, EventEmitter, SimpleChanges, OnChanges } from '@angular/core';
 
 @Directive({ selector: '[ko-focus]' })
 export class KoFocusDirective implements OnChanges {
-    constructor(private hostElement: ElementRef, private renderer: Renderer) { }
+    constructor(private hostElement: ElementRef) { }
 
     private _isFocused: boolean = false;
 
@@ -15,10 +15,10 @@ export class KoFocusDirective implements OnChanges {
 
     ngOnChanges(changes) {
         if (this.isFocused) {
-            setTimeout(() => {
-                this.renderer.invokeElementMethod(this.hostElement.nativeElement, 'focus');
-                this._isFocused = false;
-                this.changeFocus.emit(false);
+          setTimeout(() => {
+              this.hostElement.nativeElement.focus();
+              this._isFocused = false;
+              this.changeFocus.emit(false);
             }, 50);
         }
     }
