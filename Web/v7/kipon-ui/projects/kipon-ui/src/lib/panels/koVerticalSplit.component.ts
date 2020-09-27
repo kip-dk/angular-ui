@@ -1,44 +1,58 @@
-﻿import { Component, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
 
 @Component({
-    selector: 'ko-vertical-split',
-    templateUrl: './koVerticalSplit.component.html',
-    styleUrls: ['./koVerticalSplit.component.css']
+  selector: 'ko-vertical-split',
+  templateUrl: './koVerticalSplit.component.html',
+  styleUrls: ['./koVerticalSplit.component.css']
 })
-export class KoVerticalSplitComponent {
-    constructor() {
+export class KoVerticalSplitComponent implements OnInit, OnChanges {
+  constructor() {
+  }
+
+  private thread: any;
+
+  @Input() width: string = '50%';
+  @Input() fixed: string = 'left';
+
+  leftStyle;
+  rightStyle;
+
+  ngOnInit() {
+    this.init();
+  }
+
+  ngOnChanges(v): void {
+    if (this.thread != null) clearTimeout(this.thread);
+
+    this.thread = setTimeout(() => {
+      this.init;
+    }, 500);
+  }
+
+  private init(): void {
+    if (this.width == null) {
+      this.width = '50%';
     }
 
-    @Input() width: string = '50%';
-    @Input() fixed: string = 'left';
-
-    leftStyle;
-    rightStyle;
-
-    ngOnInit() {
-        if (this.width == null) {
-            this.width = '50%';
-        }
-
-        if (this.fixed == null) {
-            this.fixed = 'left';
-        }
-
-        if (this.fixed == 'left') {
-            this.leftStyle = {
-                width: this.width
-            };
-
-            this.rightStyle = {
-                left: this.width
-            }
-        } else {
-            this.leftStyle = {
-                right: this.width
-            }
-            this.rightStyle = {
-                width: this.width
-            }
-        }
+    if (this.fixed == null) {
+      this.fixed = 'left';
     }
+
+    if (this.fixed == 'left') {
+      this.leftStyle = {
+        width: this.width
+      };
+
+      this.rightStyle = {
+        left: this.width
+      }
+    } else {
+      this.leftStyle = {
+        right: this.width
+      }
+      this.rightStyle = {
+        width: this.width
+      }
+    }
+  }
 }
