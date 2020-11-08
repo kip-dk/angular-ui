@@ -16,4 +16,4 @@ Follow the link to the npm package for a full documentation
 
 ## License
 
-MIT © [Kipon ApS, 2018](mailto:kip@kipon.dk)
+MIT © [Kipon ApS, 2018,2019,2020](mailto:kip@kipon.dk)
