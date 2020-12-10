@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.t1 {
+  width: 200px;
+}
+
+
+th {
+  text-align: left;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}

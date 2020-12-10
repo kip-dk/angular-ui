@@ -1,0 +1,22 @@
+Building Angular Package
+
+------------------------------------------------------------------------------
+Building entry point 'kipon-ui'
+------------------------------------------------------------------------------
+- Compiling TypeScript sources through NGC
+√ Compiling TypeScript sources through NGC
+- Bundling to FESM2015
+√ Bundling to FESM2015
+- Bundling to UMD
+√ Bundling to UMD
+- Minifying UMD bundle
+√ Minifying UMD bundle
+- Writing package metadata
+√ Writing package metadata
+i Built kipon-ui
+
+------------------------------------------------------------------------------
+Built Angular Package
+ - from: F:\Projects\OpenSource\Kipon.Angular.UI\Web\v11\kipon-ui-app\projects\kipon-ui
+ - to:   F:\Projects\OpenSource\Kipon.Angular.UI\Web\v11\kipon-ui-app\dist\kipon-ui
+------------------------------------------------------------------------------
