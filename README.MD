@@ -1,5 +1,5 @@
 # kipon-ui
-This is the git repository for a simple angular 7 ui library.
+This is the git repository for a simple angular 11 ui library.
 
 ## Installation
 
@@ -16,4 +16,4 @@ Follow the link to the npm package for a full documentation
 
 ## License
 
-MIT © [Kipon ApS, 2018,2019,2020] (mailto:kip@kipon.dk)
+MIT © [Kipon ApS, 2018,2019,2020,2021] (mailto:kip@kipon.dk)
