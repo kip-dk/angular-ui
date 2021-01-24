@@ -23,6 +23,8 @@ export * from './lib/navigation/koOver.directive';
 export * from './lib/navigation/koTopMenu.component';
 export * from './lib/navigation/koLeftMenu.component';
 
+export * from './lib/message/koWrite.directive';
+
 export * from './lib/models/navigation.interface';
 
 

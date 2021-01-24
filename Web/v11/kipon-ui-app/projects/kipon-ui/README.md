@@ -205,9 +205,20 @@ The expandedChange will simply parse the new state of the component. (expanded o
 #### ko-alert
 Alert text box that takes up all space and is vertical centering the content. 
 
+```html
 <ko-alert {class="warning"} {align="left|center|right"}></ko-alert>
+```
 
+#### ko-write
+Ko write is a directive to allow the inner text of the tag to be written vertical. 
+The div tag in below example will be sized exactly as ko-view, and the text will be written from be bottom and up, as default
+or from the top and down, if you specify down.
 
+```html
+<ko-view>
+   <div ko-write="up|down">Write me up or down</div>
+</ko-alert>
+```
 
 ### Forms
 

@@ -150,6 +150,7 @@
     <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\forms\koFocus.directive.ts" />
     <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\kipon-ui.module.ts" />
     <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\message\koAlert.component.ts" />
+    <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\message\koWrite.directive.ts" />
     <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\message\koHeader.component.ts" />
     <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\models\navigation.interface.ts" />
     <TypeScriptCompile Include="v11\kipon-ui-app\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.ts" />

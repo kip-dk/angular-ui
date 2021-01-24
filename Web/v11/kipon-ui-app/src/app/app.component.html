@@ -6,7 +6,7 @@
     <ko-vertical-split ko-bottom width="60px" fixed="left">
       <ko-left-menu ko-left [items]="lItems" [(current)]="lCurrent">...</ko-left-menu>
       <ko-vertical-split ko-right width="400px">
-        <ko-title-panel ko-left>
+        <ko-title-panel ko-left class="raw">
           <ko-header ko-title align="right">
             <span class="fa fa-angle-up" (click)="toggleAll()" *ngIf="!all"></span>
             <span class="fa fa-angle-down" (click)="toggleAll()" *ngIf="all"></span>
@@ -71,33 +71,40 @@
             </ko-table-panel>
           </ko-horizontal-split>
         </ko-title-panel>
-        <ko-title-panel ko-right>
+        <ko-title-panel ko-right class="raw">
           <div ko-title>
             <span class="fa fa-archive"></span>title panel title
           </div>
           <ko-horizontal-split ko-body height="30px" fixed="bottom">
             <ko-vertical-split width="50%" ko-top>
               <ko-vertical-scroll ko-left>
-                <h3>Field focus test</h3>
-                <input name="felt1" [(ko-focus)]="focus.felt1" /><button (click)="focus1()">Focus 1</button><br />
-                <input name="felt2" [(ko-focus)]="focus.felt2" /><button (click)="focus2()">Focus 2</button><br />
+                <ko-vertical-split width="50px" fixed="left">
+                  <ko-view ko-left>
+                    <div ko-write="up" style="font-weight: bold; color: red">Vi skriver noget</div>
+                  </ko-view>
+                  <ko-view ko-right>
+                    <h3>Field focus test</h3>
+                    <input name="felt1" [(ko-focus)]="focus.felt1" /><button (click)="focus1()">Focus 1</button><br />
+                    <input name="felt2" [(ko-focus)]="focus.felt2" /><button (click)="focus2()">Focus 2</button><br />
 
-                <h3>Decimal input test</h3>
-                <input [ko-decimal]="1" [(ko-value)]="model.dn" (ko-valueChange)="dnWasChanged($event)" />
+                    <h3>Decimal input test</h3>
+                    <input [ko-decimal]="1" [(ko-value)]="model.dn" (ko-valueChange)="dnWasChanged($event)" />
 
 
-                <h3>Test ko-over</h3>
-                <div [ko-over]="model">
-                  <span *ngIf="model.over">&gt;&gt;&gt;&nbsp;</span>
-                  try take the mouse over this area and see the result
-                  <span *ngIf="model.over">&nbsp;&lt;&lt;&lt;<br /><br /></span>
-                  <span *ngIf="model.over" style="font-weight: bold">It should be very visible that we have the mouse over</span>
+                    <h3>Test ko-over</h3>
+                    <div [ko-over]="model">
+                      <span *ngIf="model.over">&gt;&gt;&gt;&nbsp;</span>
+                      try take the mouse over this area and see the result
+                      <span *ngIf="model.over">&nbsp;&lt;&lt;&lt;<br /><br /></span>
+                      <span *ngIf="model.over" style="font-weight: bold">It should be very visible that we have the mouse over</span>
 
-                  <br />
-                  <br />
-                  <span *ngIf="model.over">This will only be visible when mouse is over the div, while t</span>
-                  <span *ngIf="!model.over">T</span>his text should be visible at all time.
-                </div>
+                      <br />
+                      <br />
+                      <span *ngIf="model.over">This will only be visible when mouse is over the div, while t</span>
+                      <span *ngIf="!model.over">T</span>his text should be visible at all time.
+                    </div>
+                  </ko-view>
+                </ko-vertical-split>
               </ko-vertical-scroll>
               <div style="position: absolute; left: 0; right: 0; bottom: 0; top: 0" ko-right>
                 <div style="position: absolute; top: 0; left: 0; right: 0; height: 25%"><ko-alert class="success">Success alert</ko-alert></div>

@@ -21,6 +21,7 @@ import { KoHeaderComponent } from './message/koHeader.component';
 import { KoOverDirective } from './navigation/koOver.directive';
 import { KoTopMenuComponent } from './navigation/koTopMenu.component';
 import { KoLeftMenuComponent } from './navigation/koLeftMenu.component';
+import { KoWriteDirective } from './message/koWrite.directive';
 
 import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl } from './models/navigation.interface';
 
@@ -49,6 +50,8 @@ import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl
     KoOverDirective,
     KoTopMenuComponent,
     KoLeftMenuComponent,
+
+    KoWriteDirective,
   ],
   exports: [
     KoMainComponent,
@@ -71,6 +74,7 @@ import { KoNavigation, KoDivider, KoNavigationByCssClass, KoNavigationByImageUrl
     KoOverDirective,
     KoTopMenuComponent,
     KoLeftMenuComponent,
+    KoWriteDirective
   ]
 })
 export class KiponUiModule { }
