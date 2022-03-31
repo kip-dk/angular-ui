@@ -1,0 +1,54 @@
+:host {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0;
+    padding: 2px 2px 2px 2px;
+}
+
+:host input,
+:host button {
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+}
+
+:host div.divider {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: lightgray;
+    overflow: hidden;
+    float: left;
+    margin-left: 2px;
+}
+
+:host button {
+    border: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: black;
+    color: black;
+    background-color: white;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+}
+
+:host button:disabled,
+:host button[disabled] {
+    border-color: lightgray;
+    color: lightgray;
+    cursor:not-allowed;
+}
+
+:host button:hover,
+:host button:hover {
+    background-color: lightgray;
+}
+
+
+:host button:disabled:hover,
+:host button[disabled]:hover {
+    background-color: white;
+}
+
