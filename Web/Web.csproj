@@ -173,6 +173,48 @@
     <Content Include="v13\angular-ui-workspace\tsconfig.json" />
     <Content Include="v13\angular-ui-workspace\buildlib.cmd" />
     <Content Include="v13\angular-ui-workspace\releaselib.cmd" />
+    <Content Include="V14\kipon-ui-workspace\angular.json" />
+    <Content Include="V14\kipon-ui-workspace\package-lock.json" />
+    <Content Include="V14\kipon-ui-workspace\package.json" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\.browserslistrc" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\ng-package.json" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\package.json" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\README.md" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\forms\koButtonGroup.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\forms\koButtonGroup.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koAlert.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koAlert.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koHeader.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koHeader.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koTopMenu.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koTopMenu.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koExpansionPanel.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koExpansionPanel.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koHorizontalSplit.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koHorizontalSplit.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koMain.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koMain.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koTablePanel.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koTablePanel.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koTitlePanel.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koTitlePanel.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koVerticalScroll.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koVerticalScroll.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koVerticalSplit.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koVerticalSplit.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koView.component.css" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koView.component.html" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\tsconfig.lib.json" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\tsconfig.lib.prod.json" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\tsconfig.spec.json" />
+    <Content Include="V14\kipon-ui-workspace\README.md" />
+    <Content Include="V14\kipon-ui-workspace\tsconfig.json" />
+    <Content Include="V14\kipon-ui-workspace\projects\buildlib.cmd" />
+    <Content Include="V14\kipon-ui-workspace\projects\releaselib.cmd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -182,6 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="v13\angular-ui-workspace\projects\kipon-ui\karma.conf.js" />
+    <Content Include="V14\kipon-ui-workspace\projects\kipon-ui\karma.conf.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +284,28 @@
     <TypeScriptCompile Include="v13\angular-ui-workspace\projects\kipon-ui\src\lib\panels\koView.component.ts" />
     <TypeScriptCompile Include="v13\angular-ui-workspace\projects\kipon-ui\src\public-api.ts" />
     <TypeScriptCompile Include="v13\angular-ui-workspace\projects\kipon-ui\src\test.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\forms\koButtonGroup.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\forms\koDecimal.directive.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\forms\koFocus.directive.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\kipon-ui.module.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koAlert.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koHeader.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\message\koWrite.directive.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\models\navigation.interface.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koLeftMenu.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koOver.directive.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\navigation\koTopMenu.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koExpansionPanel.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koHorizontalScroll.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koHorizontalSplit.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koMain.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koTablePanel.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koTitlePanel.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koVerticalScroll.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koVerticalSplit.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\lib\panels\koView.component.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\public-api.ts" />
+    <TypeScriptCompile Include="V14\kipon-ui-workspace\projects\kipon-ui\src\test.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
