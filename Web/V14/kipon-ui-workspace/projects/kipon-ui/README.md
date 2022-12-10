@@ -1,3 +1,6 @@
+# kipon-ui version 4.x.x
+Version 4 is same codebase with angular 14 as base.
+
 # kipon-ui version 2.x.x
 
 Version 2 is a simple upgrade to angular 11, with enableIvy false for compatibility reasons.
